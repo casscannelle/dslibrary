@@ -3,6 +3,7 @@ import CircularProgressComponent from './CircularProgress';
 
 export default {
   title: 'Components/CircularProgressComponent',
+  tags: ['autodocs'],
   component: CircularProgressComponent,
 };
 

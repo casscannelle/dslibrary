@@ -3,6 +3,7 @@ import TextInput from './TextInput';
 
 export default {
   title: 'Components/TextInput',
+  tags: ['autodocs'],
   component: TextInput
 };
 

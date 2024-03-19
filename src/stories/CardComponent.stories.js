@@ -3,6 +3,7 @@ import CardComponent from './CardComponent';
 
 export default {
   title: 'Components/Card',
+  tags: ['autodocs'],
   component: CardComponent,
 };
 

@@ -3,6 +3,7 @@ import CustomContainer from './CustomContainer';
 
 export default {
   title: 'Components/CustomContainer',
+  tags: ['autodocs'],
   component: CustomContainer,
 };
 

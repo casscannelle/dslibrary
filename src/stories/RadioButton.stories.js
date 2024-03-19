@@ -3,6 +3,7 @@ import RadioButton from './RadioButton';
 
 export default {
   title: 'Components/RadioButton',
+  tags: ['autodocs'],
   component: RadioButton,
 };
 
