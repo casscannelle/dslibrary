@@ -19,11 +19,24 @@ Default.args = {
 };
 
 export const Variation1 = Template.bind({});
-Default.args = {
+Variation1.args = { 
   children: (
     <>
-      <h1>Meu Título</h1>
-      <p>Meu parágrafo</p>
+    <div style={{ background: '#15699e', width: 400, height: 400, margin: 'auto', padding: 20 }}>
+      <h1 style={{ color: 'white' }}>Meu Título</h1>
+      <p style={{ color: 'white' }}>Meu parágrafo</p>
+    </div>
+    </>
+
+  ),
+};
+
+export const Variation2 = Template.bind({});
+Variation2.args = { 
+  children: (
+    <>
+      <h1 style={{ color: 'blue' }}>Meu Título</h1> 
+      <p style={{ color: 'blue' }}>Meu parágrafo</p> 
     </>
   ),
 };

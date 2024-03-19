@@ -7,9 +7,9 @@ export default {
 };
 
 const options = [
-  { value: 'option1', label: 'Opção 1', color: '#15699e' },
-  { value: 'option2', label: 'Opção 2', color: '#15699e' },
-  { value: 'option3', label: 'Opção 3', color: '#15699e' },
+  { value: 'option1', label: 'Option 1' },
+  { value: 'option2', label: 'Option 2' },
+  { value: 'option3', label: 'Option 3' },
 ];
 
 const Template = (args) => <RadioButton {...args} />;
@@ -17,7 +17,12 @@ const Template = (args) => <RadioButton {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   options: options,
-  size: 'small',
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  options: options,
+  direction: 'row',
 };
 
 
