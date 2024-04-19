@@ -1,5 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
+import CircularProgress from '../src/stories/CircularProgress'
 
 //Testes Simples
 test("Botão com getByRole", () => {
@@ -59,6 +60,12 @@ test ('Snapshot', async () => {
   expect(container).toMatchSnapshot()
 })
 
+
+test ('Snapshot2', async () => {
+  const {container} = render(<CircularProgress />);
+
+  expect(container).toMatchSnapshot()
+})
 
 //Teste de comportamento
 test('Teste de comportamento botão', async () => {
