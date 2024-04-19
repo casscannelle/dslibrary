@@ -59,6 +59,7 @@ test ('Snapshot', async () => {
   expect(container).toMatchSnapshot()
 })
 
+
 //Teste de comportamento
 test('Teste de comportamento botão', async () => {
   render(<App/>);
