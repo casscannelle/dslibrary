@@ -1,6 +1,7 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import App from './App';
 import CircularProgress from '../src/stories/CircularProgress'
+import LandingPage from './components/LandingPage';
 
 //Testes Simples
 test("Botão com getByRole", () => {
@@ -36,22 +37,6 @@ test('Renderiza botão quando clicado', () => {
   expect(textoAposClique).toBeInTheDocument();
 });
 
-
-//Teste que retorna Erro
-test("renders button correctly and does not show text when clicked", () => {
-  const { getByText, queryByText } = render(<App />);
-  const textoAntesDoClique = queryByText("Botão Clicado");
-  expect(textoAntesDoClique).toBeNull();
-
-  const botao2 = getByText("Clique aqui");
-  fireEvent.click(botao2);
-
-  const textoAposClique = queryByText("Botão Clicado");
-  expect(textoAposClique).toBeNull();
-});
-
-
-
 //Teste Snapshot
 
 test ('Snapshot', async () => {
@@ -81,3 +66,16 @@ test('Teste de comportamento botão', async () => {
 });
 
 //Teste que envolve useEffect
+
+describe('Teste do useEffect', () => {
+  it('contador atualiza com cliques', async () => {
+    const { getByRole } = render(<App />);
+
+    const inputButton = getByRole('button', {name: "Enviar" })
+    fireEvent.click(inputButton);
+
+    await waitFor(() => {
+      expect(document.title).toBe('Você clicou 1 vezes.');
+    });
+  });
+});
