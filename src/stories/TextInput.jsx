@@ -5,7 +5,7 @@ const TextInput = ({ label, ...props }) => {
   return (
     <TextField
       label={label}
-      fullWidth
+      max-width={300}
       variant="outlined"
       {...props}
     />
