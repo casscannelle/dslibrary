@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div>
+      <header>
+        <div
+          class="storybook-header"
+        >
+          <div>
+            <svg
+              height="32"
+              viewBox="0 0 32 32"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <path
+                  d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
+                  fill="#FFF"
+                />
+                <path
+                  d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
+                  fill="#555AB9"
+                />
+                <path
+                  d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
+                  fill="#91BAF8"
+                />
+              </g>
+            </svg>
+            <h1>
+              Acme
+            </h1>
+          </div>
+          <div>
+            <button
+              class="storybook-button storybook-button--small storybook-button--secondary"
+              type="button"
+            >
+              Log in
+            </button>
+            <button
+              class="storybook-button storybook-button--small storybook-button--primary"
+              type="button"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </header>
+      <div
+        class="MuiContainer-root MuiContainer-maxWidth1200px css-1ep0w82-MuiContainer-root"
+      >
+        <h2>
+          Página montada para testes
+        </h2>
+        <p>
+          Conteúdo para o teste usando o componente de container.
+        </p>
+        <button
+          class="storybook-button storybook-button--medium storybook-button--primary"
+          type="button"
+        >
+          Clique aqui
+        </button>
+      </div>
+      <div
+        class="MuiContainer-root MuiContainer-maxWidth1200px css-1ep0w82-MuiContainer-root"
+      >
+        <h2>
+          Mais um container
+        </h2>
+        <p>
+          Usando o inputfield
+        </p>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+          max-width="300"
+        >
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":r5:"
+              placeholder="Nome"
+              type="text"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-ihdtdm"
+              >
+                <span
+                  class="notranslate"
+                >
+                  ​
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div>
+          <button
+            class="storybook-button storybook-button--medium storybook-button--secondary"
+            type="button"
+          >
+            Enviar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

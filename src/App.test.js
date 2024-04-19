@@ -22,12 +22,42 @@ test('Busca por Placeholder', () => {
 });
 
 //Teste do caminho Feliz
+test('Renderiza botão quando clicado', () => {
+  const { getByText, queryByText } = render(<App />);
+  const textoAntesDoClique = queryByText("Botão Clicado");
+  expect(textoAntesDoClique).toBeNull();
+  
+  const botao = getByText("Clique aqui");
+  
+  fireEvent.click(botao);
 
+  const textoAposClique = getByText("Botão Clicado");
+  expect(textoAposClique).toBeInTheDocument();
+});
 
 
 //Teste que retorna Erro
+test("renders button correctly and does not show text when clicked", () => {
+  const { getByText, queryByText } = render(<App />);
+  const textoAntesDoClique = queryByText("Botão Clicado");
+  expect(textoAntesDoClique).toBeNull();
+
+  const botao2 = getByText("Clique aqui");
+  fireEvent.click(botao2);
+
+  const textoAposClique = queryByText("Botão Clicado");
+  expect(textoAposClique).toBeNull();
+});
+
+
 
 //Teste Snapshot
+
+test ('Snapshot', async () => {
+  const {container} = render(<App/>);
+
+  expect(container).toMatchSnapshot()
+})
 
 //Teste de comportamento
 test('Teste de comportamento botão', async () => {

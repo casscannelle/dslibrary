@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CustomContainer from "../stories/CustomContainer";
 import { Header } from "../stories/Header";
 import { Button } from "../stories/Button";
@@ -7,6 +7,11 @@ import TextInput from "../stories/TextInput";
 
 function LandingPage ( ) {
     const [show, setShow] = useState(false)
+    const [contador, setContador] = useState(0);
+
+    useEffect(() => {
+        document.title = `Você clicou ${contador} vezes.`;
+    });
 
     return (
         <div>
@@ -21,7 +26,10 @@ function LandingPage ( ) {
         <h2>Mais um container</h2>
         <p>Usando o inputfield</p>
         <TextInput placeholder="Nome"/>
-        <div><Button label="Enviar" role="button"/></div>
+        <div>
+            <Button label="Enviar" onClick={() => setContador(contador + 1)} />
+            {contador > 0 && <p>Você clicou {contador} vezes.</p>}
+        </div>
         </CustomContainer>
         
       </div>
